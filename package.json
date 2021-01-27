@@ -9,7 +9,8 @@
   "scripts": {
     "build": "microbundle -f cjs --target node",
     "dev": "npm run build -- --watch",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",

@@ -1,7 +1,7 @@
 {
   "name": "next-og-image",
   "author": "Ash",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "typings": "./dist/index.d.ts",
   "source": "./src/index.ts",

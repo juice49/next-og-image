@@ -55,9 +55,9 @@ The image generated is 2048x1260 pixels. You may need to make the contents of
 you page larger than you'd expect. On my website, I have used the [`zoom` property](https://developer.mozilla.org/en-US/docs/Web/CSS/zoom)
 to quickly and easily scale up my design system components.
 
-Here is an example from my personal site: https://ash-fd54pw8c3.vercel.app/this-is-my-jam/28252440-993a-4096-9f7b-9588ff4374ac/og-image.
+Here is an example from my personal site: https://ash.gd/this-is-my-jam/28252440-993a-4096-9f7b-9588ff4374ac/og-image.
 
-The PNG version can be accessed at: https://ash-fd54pw8c3.vercel.app/api/og-image/this-is-my-jam/28252440-993a-4096-9f7b-9588ff4374ac/og-image.png
+The PNG version can be accessed at: https://ash.gd/api/og-image/this-is-my-jam/28252440-993a-4096-9f7b-9588ff4374ac/og-image.png
 
 ### 6. Link to an OG image
 
@@ -69,11 +69,11 @@ Use the following URL structure to link to an OG image:
 
 | Token    | Description                 | Example                                                      |
 | -------- | --------------------------- | ------------------------------------------------------------ |
-| url      | Website URL.                | https://ash-fd54pw8c3.vercel.app                             |
+| url      | Website URL.                | https://ash.gd                                               |
 | apiRoute | Path to OG image API route. | og-image                                                     |
 | ogPath   | Path to OG image page.      | this-is-my-jam/28252440-993a-4096-9f7b-9588ff4374ac/og-image |
 
-For example: https://ash-fd54pw8c3.vercel.app/api/og-image/this-is-my-jam/28252440-993a-4096-9f7b-9588ff4374ac/og-image.png
+For example: https://ash.gd/api/og-image/this-is-my-jam/28252440-993a-4096-9f7b-9588ff4374ac/og-image.png
 
 ## Environment variables
 

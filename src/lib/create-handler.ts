@@ -12,7 +12,8 @@ export default function createHandler(): (
 ) => Promise<void> {
   return async function handler(req, res) {
     try {
-      const { path, extension } = getCleanPath(req.query.path)
+      const { path: rawPath, ...props } = req.query
+      const { path, extension } = getCleanPath(rawPath)
       const baseUrl = getBaseUrl()
 
       if (extension !== '.png') {
@@ -28,7 +29,7 @@ export default function createHandler(): (
         )
       }
 
-      const image = await getImage(baseUrl, path)
+      const image = await getImage(baseUrl, path, props)
       res.statusCode = 200
       res.setHeader('Content-Type', 'image/png')
 

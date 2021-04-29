@@ -26,7 +26,7 @@
     "typescript": "^4.1.3"
   },
   "dependencies": {
-    "playwright-aws-lambda": "^0.6.0",
-    "playwright-core": "^1.8.0"
+    "chrome-aws-lambda": "^8.0.2",
+    "playwright-core": "^1.11.0-next-alpha-apr-28-2021"
   }
 }

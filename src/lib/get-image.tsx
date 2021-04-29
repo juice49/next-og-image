@@ -1,10 +1,15 @@
-import { launchChromium } from 'playwright-aws-lambda'
+const chromium = require('chrome-aws-lambda')
+const playwright = require('playwright-core')
 
 export default async function getImage(
   baseUrl: string,
   path: string[],
 ): Promise<Buffer> {
-  const browser = await launchChromium({ headless: true })
+  const browser = await playwright.chromium.launch({
+    args: chromium.args,
+    executablePath: await chromium.executablePath,
+    headless: chromium.headless,
+  })
 
   const context = await browser.newContext({
     viewport: {
@@ -15,5 +20,7 @@ export default async function getImage(
 
   const page = await context.newPage()
   await page.goto([baseUrl, ...path].join('/'))
-  return page.screenshot()
+  const screenshot = await page.screenshot()
+  await browser.close()
+  return screenshot
 }

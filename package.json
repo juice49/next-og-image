@@ -3,7 +3,7 @@
   "author": "Ash",
   "repository": "juice49/next-og-image",
   "description": "Generate Open Graph protocol images for your website using Next.js and React components.",
-  "version": "1.0.1-next.0",
+  "version": "1.0.1-next.1",
   "license": "MIT",
   "typings": "./dist/index.d.ts",
   "source": "./src/index.ts",

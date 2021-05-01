@@ -27,6 +27,6 @@
   },
   "dependencies": {
     "chrome-aws-lambda": "^8.0.2",
-    "playwright-core": "^1.11.0-next-alpha-apr-28-2021"
+    "playwright-core": "^1.11.0-next-alpha-may-1-2021"
   }
 }

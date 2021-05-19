@@ -8,6 +8,9 @@
   "typings": "./dist/index.d.ts",
   "source": "./src/index.ts",
   "main": "./dist/index.js",
+  "workspaces": [
+    "examples/*"
+  ],
   "scripts": {
     "build": "microbundle -f cjs --target node",
     "dev": "npm run build -- --watch",

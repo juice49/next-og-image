@@ -30,6 +30,6 @@
   },
   "dependencies": {
     "chrome-aws-lambda": "^8.0.2",
-    "playwright-core": "^1.11.0"
+    "puppeteer-core": "^8.0.0"
   }
 }

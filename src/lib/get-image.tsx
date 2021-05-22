@@ -1,24 +1,18 @@
-const chromium = require('chrome-aws-lambda')
-const playwright = require('playwright-core')
+import chrome from 'chrome-aws-lambda'
+import puppeteer from 'puppeteer-core'
 
 export default async function getImage(
   baseUrl: string,
   path: string[],
-): Promise<Buffer> {
-  const browser = await playwright.chromium.launch({
-    args: chromium.args,
-    executablePath: await chromium.executablePath,
-    headless: chromium.headless,
+): Promise<Buffer | String | void> {
+  const browser = await puppeteer.launch({
+    args: chrome.args,
+    executablePath: await chrome.executablePath,
+    headless: chrome.headless,
   })
 
-  const context = await browser.newContext({
-    viewport: {
-      width: 2048,
-      height: 1260,
-    },
-  })
-
-  const page = await context.newPage()
+  const page = await browser.newPage()
+  page.setViewport({ width: 2048, height: 1260 })
   await page.goto([baseUrl, ...path].join('/'))
   const screenshot = await page.screenshot()
   await browser.close()

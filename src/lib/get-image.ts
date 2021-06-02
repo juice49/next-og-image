@@ -7,7 +7,6 @@ export default async function getImage(
 ): Promise<Buffer | String | void> {
   const browser = await puppeteer.launch({
     args: chrome.args,
-    headless: chrome.headless,
     executablePath:
       process.env.CHROME_EXECUTABLE_PATH ?? (await chrome.executablePath),
   })

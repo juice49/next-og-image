@@ -57,7 +57,7 @@ to quickly and easily scale up my design system components.
 
 Here is an example from my personal site: https://ash.gd/this-is-my-jam/28252440-993a-4096-9f7b-9588ff4374ac/og-image.
 
-The PNG version can be accessed at: https://ash.gd/api/og-image/this-is-my-jam/28252440-993a-4096-9f7b-9588ff4374ac/og-image.png
+The PNG version can be accessed at: https://og-image.ash.gd/api/this-is-my-jam/28252440-993a-4096-9f7b-9588ff4374ac/og-image.png.
 
 ### 6. Link to an OG image
 
@@ -73,7 +73,7 @@ Use the following URL structure to link to an OG image:
 | apiRoute | Path to OG image API route. | og-image                                                     |
 | ogPath   | Path to OG image page.      | this-is-my-jam/28252440-993a-4096-9f7b-9588ff4374ac/og-image |
 
-For example: https://ash.gd/api/og-image/this-is-my-jam/28252440-993a-4096-9f7b-9588ff4374ac/og-image.png
+For example: https://og-image.ash.gd/api/this-is-my-jam/28252440-993a-4096-9f7b-9588ff4374ac/og-image.png.
 
 ## Environment variables
 

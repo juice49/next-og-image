@@ -85,10 +85,10 @@ If you deploy to Vercel, this will be handled automatically using the
 If you do not deploy to Vercel, are testing locally, or want to override the URL,
 you can do so by setting the `OG_IMAGE_BASE_URL` environment variable.
 
-| Name                     | Description                                                                                                          | Required |
-| ------------------------ | -------------------------------------------------------------------------------------------------------------------- | -------- |
-| `OG_IMAGE_BASE_URL`      | Base URL used to load source pages. If deployed to Vercel, the `VERCEL_URL` environment variable is used by default. | No       |
-| `CHROME_EXECUTABLE_PATH` | Path to Chrome. Not required when deployed to Vercel, AWS, or GCP.                                                   | No       |
+| Name                              | Description                                                                                                          | Required |
+| --------------------------------- | -------------------------------------------------------------------------------------------------------------------- | -------- |
+| `OG_IMAGE_BASE_URL`               | Base URL used to load source pages. If deployed to Vercel, the `VERCEL_URL` environment variable is used by default. | No       |
+| `OG_IMAGE_CHROME_EXECUTABLE_PATH` | Path to Chrome. Not required when deployed to Vercel, AWS, or GCP.                                                   | No       |
 
 ## Caching
 
@@ -96,6 +96,6 @@ Generated images are cached by the CDN and the client for one year.
 
 ## Running outside of Vercel, AWS, or GCP
 
-To run Next OG Image outside of Vercel, AWS, or GCP, set the `CHROME_EXECUTABLE_PATH` environment variable.
+To run Next OG Image outside of Vercel, AWS, or GCP, set the `OG_IMAGE_CHROME_EXECUTABLE_PATH` environment variable.
 
 For example, on macOS: `/Applications/Google Chrome.app/Contents/MacOS/Google Chrome`.

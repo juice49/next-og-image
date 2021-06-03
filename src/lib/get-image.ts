@@ -8,7 +8,8 @@ export default async function getImage(
   const browser = await puppeteer.launch({
     args: chrome.args,
     executablePath:
-      process.env.CHROME_EXECUTABLE_PATH ?? (await chrome.executablePath),
+      process.env.OG_IMAGE_CHROME_EXECUTABLE_PATH ??
+      (await chrome.executablePath),
   })
 
   const page = await browser.newPage()

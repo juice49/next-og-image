@@ -7,7 +7,7 @@ Inspired by [Vercel's Open Graph image service](https://github.com/vercel/og-ima
 
 ## Usage
 
-### 1. Install the `next-og-image` package:
+### 1. Install the `next-og-image` package
 
 ```
 npm install next-og-image

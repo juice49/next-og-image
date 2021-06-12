@@ -75,6 +75,10 @@ Use the following URL structure to link to an OG image:
 
 For example: https://og-image.ash.gd/api/this-is-my-jam/28252440-993a-4096-9f7b-9588ff4374ac/og-image.png.
 
+## Passing props to the source page
+
+You can use query parameters to customise the source page. Any query parameters included in the request are passed through to the source page, where you can access them using a Next.js data fetching function, or the Next.js router.
+
 ## Environment variables
 
 Next OG Image must know your website URL in order to load a page to snapshot.

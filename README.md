@@ -75,6 +75,12 @@ Use the following URL structure to link to an OG image:
 
 For example: https://og-image.ash.gd/api/this-is-my-jam/28252440-993a-4096-9f7b-9588ff4374ac/og-image.png.
 
+## Image size
+
+The generated image is 1200x600 pixels, adhering to the 2:1 aspect ratio of Twitter's [_summary card with large image format_](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary-card-with-large-image).
+
+If you have different requirements for the image size, please comment on [#11](https://github.com/juice49/next-og-image/issues/11).
+
 ## Passing props to the source page
 
 You can use query parameters to customise the source page. Any query parameters included in the request are passed through to the source page, where you can access them using a Next.js data fetching function, or the Next.js router.

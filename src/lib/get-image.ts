@@ -3,6 +3,8 @@ import puppeteer from 'puppeteer-core'
 import Props from '../types/props'
 import propsToSearchParams from './props-to-search-params'
 
+const width = 1200
+
 export default async function getImage(
   baseUrl: string,
   path: string[],
@@ -16,7 +18,7 @@ export default async function getImage(
   })
 
   const page = await browser.newPage()
-  page.setViewport({ width: 2048, height: 1260 })
+  page.setViewport({ width, height: width / 2 })
   await page.goto(
     `${[baseUrl, ...path].join('/')}?${propsToSearchParams(props)}`,
   )
